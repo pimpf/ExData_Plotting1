@@ -66,5 +66,3 @@ plot(data$DateTime,
 
 # Close device
 dev.off();
-
-dev.off()
