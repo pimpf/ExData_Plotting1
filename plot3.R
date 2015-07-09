@@ -89,6 +89,3 @@ legend("topright",
 
 # Close device
 dev.off();
-
-
-dev.off()
