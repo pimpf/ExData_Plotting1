@@ -25,7 +25,7 @@ fUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_c
 downloadAndUnzipRawData <- function() {
     
     # Download source, on Mac OS X method should be specified
-    download.file(fUrl, destfile="rawData.zip", method="curl")
+    download.file(fUrl, destfile="rawData.zip", method="curl");
     
     # Unzip it so it can be read directly.
     powerConsumption <- unzip("rawData.zip", fName);
@@ -60,17 +60,17 @@ png(filename="plot1.png",
     height = 480, 
     width = 480, 
     units = "px", 
-    bg = "white")
+    bg = "white");
 
-data <- getWorkingData()
+data <- getWorkingData();
 
 # 'Draw' histogram
 hist(data$Global_active_power,
      col = "red",
      main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)",
-     ylab = "Frequency")
+     ylab = "Frequency");
 
 # Close device
-dev.off()
+dev.off();
 
