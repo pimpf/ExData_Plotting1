@@ -20,7 +20,7 @@ fUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_c
 downloadAndUnzipRawData <- function() {
     
     # Download source, on Mac OS X method should be specified
-    download.file(fUrl, destfile="rawData.zip", method="curl")
+    download.file(fUrl, destfile="rawData.zip", method="curl");
     
     # Unzip it so it can be read directly.
     powerConsumption <- unzip("rawData.zip", fName);
@@ -112,5 +112,3 @@ plot(data$DateTime,
      ylab = "Global_reactive_power");
 
 dev.off();
-
-dev.off()
